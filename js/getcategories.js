@@ -10,3 +10,10 @@ angular.module('getCategories').controller('Accordion', function($scope, $http) 
         isFirstDisabled: false
     };
 });
+
+    app.controller('resultsCtrl', function($scope, $http) {
+        $http.get("https://gist.githubusercontent.com/martimatix/8fdbbcd613cc9b228144/raw/066f120ea50c5d0496f163cec00701cf7b87b7f9/results.json")
+            .success(function(response) {
+                $scope.results = response;
+            });
+    });
