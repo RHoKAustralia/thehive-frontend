@@ -40,7 +40,7 @@
     <div class="container text-center">
         <div class="row">
             <div class="col-xs-6">
-                <h3>Search</h3>
+                <h3><a href="search_result.html">Search</a></h3>
             </div>
             <div class="col-xs-6">
                 <h3>What's On</h3>
@@ -66,14 +66,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div ng-app="myApp" ng-controller="categoriesCtrl">
-        <ul>
-            <li ng-repeat="x in names">
-                {{ x.Name + ', ' + x.Country }}
-            </li>
-        </ul>
-    </div>
+    </div>    
+    <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/getcategories.js"></script>
 </body>
